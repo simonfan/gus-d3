@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>d3 line</title>
+
+	<meta charset="utf-8">
+
+	<script type="text/javascript" src="bower_components/d3/d3.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.js"></script>
+
+
+	<!-- Styling -->
+	<style type="text/css">
+		#graph {
+			width: 600px;
+			height: 400px;
+
+			border: 1px dashed gray;
+		}
+
+		/* style the line */
+		path {
+			stroke: steelblue;
+			stroke-width: 3px;
+
+			fill: none;
+		}
+	</style>
+
+	<!-- LOAD THE FILE WITH THE DATA -->
+	<script type="text/javascript" src="data-csv.js"></script>
+
+</head>
+<body>
+
+	<div id="graph"></div>
+
+
+	<button onclick="updateGraph('Mensal')">Mensal</button>
+	<button onclick="updateGraph('Semestral')">Semestral</button>
+	<button onclick="updateGraph('Anual')">Anual</button>
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
